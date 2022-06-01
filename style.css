@@ -1,0 +1,165 @@
+/* when we use  * all of the html tags are selected by default */
+* {
+    box-sizing: border-box;
+    /* it help us not to increase the size of box when border is added to it */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-cont {
+    height: 5rem;
+    background-color: rgb(59, 53, 53);
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-cont>* {
+    margin-left: 4rem;
+    border-radius: 3px;
+}
+
+.toolbox-priority {
+    height: 3.5rem;
+    width: 18rem;
+    background-color: #1289A7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toolbox-button {
+    height: 3.5rem;
+    width: 7rem;
+    background-color: #D980FA;
+    display: flex;
+}
+
+.color {
+    height: 1.5rem;
+    width: 3rem;
+
+}
+
+.toolbox-button>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.pink {
+    background-color: pink;
+}
+
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.black {
+    background-color: black;
+}
+
+.toolbox-button>*:hover {
+    background-color: skyblue;
+    transform: scale(1.1);
+}
+
+.toolbox-priority>*:hover {
+    transform: scale(1.2);
+}
+
+.model-cont {
+    height: 50vh;
+    width: 45vw;
+    background-color: lavender ;
+
+    /* when we absolute a positon of something it does not have any relation we screen */
+    position: absolute;
+    top: calc((100vh - 50vh) / 2);
+    left: calc((100vw - 45vw) / 2);
+    display: none;
+    border-radius: 2px;
+
+}
+
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    background-color: lightcyan;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 2rem;
+    font-size: 2rem;
+    
+}
+
+.priority-selector{
+    height: 100%;
+    width: 25% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.priority-color{
+    height: 3rem;
+    width: 5rem;
+}
+
+.active{
+    border : 5px solid orange;
+}
+
+.main-cont{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.ticket-cont{
+    height: 12rem;
+    width: 15rem;
+    background-color: lightgrey;
+}
+
+.ticket-color{
+    height: 1rem;
+    /* background-color: black; */
+}
+
+.ticket-id{
+    height: 2rem;
+    
+    /* background-color: palevioletred; */
+
+}
+
+.task-area{
+    height: calc(100% - 1rem -2rem);
+    font-size: 1.5rem;
+    padding :5px;
+    outline: none;
+
+}
+
+.lock-cont{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 75px;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
